@@ -1,0 +1,356 @@
+// =============================================
+// Fallbacks for non-SVG support by Gary Hepting 
+//           Last Updated:2013-2-15
+// =============================================
+
+// variables & mixins
+@import "variables";
+@import "mixins";
+
+
+
+
+.no-inlinesvg {
+  // ====================
+  //     social icons
+  // ====================
+  .social-icon {
+    width:30px;
+    height:30px;
+    &.small {
+      width: 20px;
+      height: 20px;
+    }
+    &.medium {
+      width: 30px;
+      height: 30px;
+    }
+    &.large {
+      width: 48px;
+      height: 48px;
+    }
+    &.aboutme, 
+    &.aboutme.medium { @include data-image('social-icons/aboutme-m.png');
+      &.large { @include data-image('social-icons/aboutme.png'); }
+      &.small { @include data-image('social-icons/aboutme-s.png'); }
+    }
+
+    &.adn, 
+    &.adn.medium { @include data-image('social-icons/adn-m.png');
+      &.large { @include data-image('social-icons/adn.png'); }
+      &.small { @include data-image('social-icons/adn-s.png'); }
+    }
+
+    &.android, 
+    &.android.medium { @include data-image('social-icons/android-m.png');
+      &.large { @include data-image('social-icons/android.png'); }
+      &.small { @include data-image('social-icons/android-s.png'); }
+    }
+
+    &.apple, 
+    &.apple.medium { @include data-image('social-icons/apple-m.png');
+      &.large { @include data-image('social-icons/apple.png'); }
+      &.small { @include data-image('social-icons/apple-s.png'); }
+    }
+
+    &.behance, 
+    &.behance.medium { @include data-image('social-icons/behance-m.png');
+      &.large { @include data-image('social-icons/behance.png'); }
+      &.small { @include data-image('social-icons/behance-s.png'); }
+    }
+
+    &.bitbucket, 
+    &.bitbucket.medium { @include data-image('social-icons/bitbucket-m.png');
+      &.large { @include data-image('social-icons/bitbucket.png'); }
+      &.small { @include data-image('social-icons/bitbucket-s.png'); }
+    }
+
+    &.coderwall, 
+    &.coderwall.medium { @include data-image('social-icons/coderwall-m.png');
+      &.large { @include data-image('social-icons/coderwall.png'); }
+      &.small { @include data-image('social-icons/coderwall-s.png'); }
+    }
+
+    &.creativecloud, 
+    &.creativecloud.medium { @include data-image('social-icons/creativecloud-m.png');
+      &.large { @include data-image('social-icons/creativecloud.png'); }
+      &.small { @include data-image('social-icons/creativecloud-s.png'); }
+    }
+
+    &.dribbble, 
+    &.dribbble.medium { @include data-image('social-icons/dribbble-m.png');
+      &.large { @include data-image('social-icons/dribbble.png'); }
+      &.small { @include data-image('social-icons/dribbble-s.png'); }
+    }
+
+    &.dropbox, 
+    &.dropbox.medium { @include data-image('social-icons/dropbox-m.png');
+      &.large { @include data-image('social-icons/dropbox.png'); }
+      &.small { @include data-image('social-icons/dropbox-s.png'); }
+    }
+
+    &.evernote, 
+    &.evernote.medium { @include data-image('social-icons/evernote-m.png');
+      &.large { @include data-image('social-icons/evernote.png'); }
+      &.small { @include data-image('social-icons/evernote-s.png'); }
+    }
+
+    &.facebook, 
+    &.facebook.medium { @include data-image('social-icons/facebook-m.png');
+      &.large { @include data-image('social-icons/facebook.png'); }
+      &.small { @include data-image('social-icons/facebook-s.png'); }
+    }
+
+    &.flickr, 
+    &.flickr.medium { @include data-image('social-icons/flickr-m.png');
+      &.large { @include data-image('social-icons/flickr.png'); }
+      &.small { @include data-image('social-icons/flickr-s.png'); }
+    }
+
+    &.foursquare, 
+    &.foursquare.medium { @include data-image('social-icons/foursquare-m.png');
+      &.large { @include data-image('social-icons/foursquare.png'); }
+      &.small { @include data-image('social-icons/foursquare-s.png'); }
+    }
+
+    &.git, 
+    &.git.medium { @include data-image('social-icons/git-m.png');
+      &.large { @include data-image('social-icons/git.png'); }
+      &.small { @include data-image('social-icons/git-s.png'); }
+    }
+
+    &.github, 
+    &.github.medium { @include data-image('social-icons/github-m.png');
+      &.large { @include data-image('social-icons/github.png'); }
+      &.small { @include data-image('social-icons/github-s.png'); }
+    }
+
+    &.googleplay, 
+    &.googleplay.medium { @include data-image('social-icons/googleplay-m.png');
+      &.large { @include data-image('social-icons/googleplay.png'); }
+      &.small { @include data-image('social-icons/googleplay-s.png'); }
+    }
+
+    &.googleplus, 
+    &.googleplus.medium { @include data-image('social-icons/googleplus-m.png');
+      &.large { @include data-image('social-icons/googleplus.png'); }
+      &.small { @include data-image('social-icons/googleplus-s.png'); }
+    }
+
+    &.html5, 
+    &.html5.medium { @include data-image('social-icons/html5-m.png');
+      &.large { @include data-image('social-icons/html5.png'); }
+      &.small { @include data-image('social-icons/html5-s.png'); }
+    }
+
+    &.icloud, 
+    &.icloud.medium { @include data-image('social-icons/icloud-m.png');
+      &.large { @include data-image('social-icons/icloud.png'); }
+      &.small { @include data-image('social-icons/icloud-s.png'); }
+    }
+
+    &.instagram, 
+    &.instagram.medium { @include data-image('social-icons/instagram-m.png');
+      &.large { @include data-image('social-icons/instagram.png'); }
+      &.small { @include data-image('social-icons/instagram-s.png'); }
+    }
+
+    &.lastfm, 
+    &.lastfm.medium { @include data-image('social-icons/lastfm-m.png');
+      &.large { @include data-image('social-icons/lastfm.png'); }
+      &.small { @include data-image('social-icons/lastfm-s.png'); }
+    }
+
+    &.linkedin, 
+    &.linkedin.medium { @include data-image('social-icons/linkedin-m.png');
+      &.large { @include data-image('social-icons/linkedin.png'); }
+      &.small { @include data-image('social-icons/linkedin-s.png'); }
+    }
+
+    &.mail, 
+    &.mail.medium { @include data-image('social-icons/mail-m.png');
+      &.large { @include data-image('social-icons/mail.png'); }
+      &.small { @include data-image('social-icons/mail-s.png'); }
+    }
+
+    &.mixi, 
+    &.mixi.medium { @include data-image('social-icons/mixi-m.png');
+      &.large { @include data-image('social-icons/mixi.png'); }
+      &.small { @include data-image('social-icons/mixi-s.png'); }
+    }
+
+    &.msn, 
+    &.msn.medium { @include data-image('social-icons/msn-m.png');
+      &.large { @include data-image('social-icons/msn.png'); }
+      &.small { @include data-image('social-icons/msn-s.png'); }
+    }
+
+    &.pinterest, 
+    &.pinterest.medium { @include data-image('social-icons/pinterest-m.png');
+      &.large { @include data-image('social-icons/pinterest.png'); }
+      &.small { @include data-image('social-icons/pinterest-s.png'); }
+    }
+
+    &.pocket, 
+    &.pocket.medium { @include data-image('social-icons/pocketapp-m.png');
+      &.large { @include data-image('social-icons/pocketapp.png'); }
+      &.small { @include data-image('social-icons/pocketapp-s.png'); }
+    }
+
+    &.quora, 
+    &.quora.medium { @include data-image('social-icons/quora-m.png');
+      &.large { @include data-image('social-icons/quora.png'); }
+      &.small { @include data-image('social-icons/quora-s.png'); }
+    }
+
+    &.orkut, 
+    &.orkut.medium { @include data-image('social-icons/orkut-m.png');
+      &.large { @include data-image('social-icons/orkut.png'); }
+      &.small { @include data-image('social-icons/orkut-s.png'); }
+    }
+
+    &.mercurial, 
+    &.mercurial.medium { @include data-image('social-icons/mercurial-m.png');
+      &.large { @include data-image('social-icons/mercurial.png'); }
+      &.small { @include data-image('social-icons/mercurial-s.png'); }
+    }
+
+    &.rdio, 
+    &.rdio.medium { @include data-image('social-icons/rdio-m.png');
+      &.large { @include data-image('social-icons/rdio.png'); }
+      &.small { @include data-image('social-icons/rdio-s.png'); }
+    }
+
+    &.renren, 
+    &.renren.medium { @include data-image('social-icons/renren-m.png');
+      &.large { @include data-image('social-icons/renren.png'); }
+      &.small { @include data-image('social-icons/renren-s.png'); }
+    }
+
+    &.rss, 
+    &.rss.medium { @include data-image('social-icons/rss-m.png');
+      &.large { @include data-image('social-icons/rss.png'); }
+      &.small { @include data-image('social-icons/rss-s.png'); }
+    }
+
+    &.skitch, 
+    &.skitch.medium { @include data-image('social-icons/skitch-m.png');
+      &.large { @include data-image('social-icons/skitch.png'); }
+      &.small { @include data-image('social-icons/skitch-s.png'); }
+    }
+
+    &.skype, 
+    &.skype.medium { @include data-image('social-icons/skype-m.png');
+      &.large { @include data-image('social-icons/skype.png'); }
+      &.small { @include data-image('social-icons/skype-s.png'); }
+    }
+
+    &.soundcloud, 
+    &.soundcloud.medium { @include data-image('social-icons/soundcloud-m.png');
+      &.large { @include data-image('social-icons/soundcloud.png'); }
+      &.small { @include data-image('social-icons/soundcloud-s.png'); }
+    }
+
+    &.spotify, 
+    &.spotify.medium { @include data-image('social-icons/spotify-m.png');
+      &.large { @include data-image('social-icons/spotify.png'); }
+      &.small { @include data-image('social-icons/spotify-s.png'); }
+    }
+
+    &.stackoverflow, 
+    &.stackoverflow.medium { @include data-image('social-icons/stackoverflow-m.png');
+      &.large { @include data-image('social-icons/stackoverflow.png'); }
+      &.small { @include data-image('social-icons/stackoverflow-s.png'); }
+    }
+
+    &.stumbleupon, 
+    &.stumbleupon.medium { @include data-image('social-icons/stumbleupon-m.png');
+      &.large { @include data-image('social-icons/stumbleupon.png'); }
+      &.small { @include data-image('social-icons/stumbleupon-s.png'); }
+    }
+
+    &.svn, 
+    &.svn.medium { @include data-image('social-icons/svn-m.png');
+      &.large { @include data-image('social-icons/svn.png'); }
+      &.small { @include data-image('social-icons/svn-s.png'); }
+    }
+
+    &.tent, 
+    &.tent.medium { @include data-image('social-icons/tent-m.png');
+      &.large { @include data-image('social-icons/tent.png'); }
+      &.small { @include data-image('social-icons/tent-s.png'); }
+    }
+
+    &.tripadvisor, 
+    &.tripadvisor.medium { @include data-image('social-icons/tripadvisor-m.png');
+      &.large { @include data-image('social-icons/tripadvisor.png'); }
+      &.small { @include data-image('social-icons/tripadvisor-s.png'); }
+    }
+
+    &.tumblr, 
+    &.tumblr.medium { @include data-image('social-icons/tumblr-m.png');
+      &.large { @include data-image('social-icons/tumblr.png'); }
+      &.small { @include data-image('social-icons/tumblr-s.png'); }
+    }
+
+    &.twitter, 
+    &.twitter.medium { @include data-image('social-icons/twitter-m.png');
+      &.large { @include data-image('social-icons/twitter.png'); }
+      &.small { @include data-image('social-icons/twitter-s.png'); }
+    }
+
+    &.vimeo, 
+    &.vimeo.medium { @include data-image('social-icons/vimeo-m.png');
+      &.large { @include data-image('social-icons/vimeo.png'); }
+      &.small { @include data-image('social-icons/vimeo-s.png'); }
+    }
+
+    &.weibo, 
+    &.weibo.medium { @include data-image('social-icons/weibo-m.png');
+      &.large { @include data-image('social-icons/weibo.png'); }
+      &.small { @include data-image('social-icons/weibo-s.png'); }
+    }
+
+    &.windows, 
+    &.windows.medium { @include data-image('social-icons/windows-m.png');
+      &.large { @include data-image('social-icons/windows.png'); }
+      &.small { @include data-image('social-icons/windows-s.png'); }
+    }
+
+    &.wordpress, 
+    &.wordpress.medium { @include data-image('social-icons/wordpress-m.png');
+      &.large { @include data-image('social-icons/wordpress.png'); }
+      &.small { @include data-image('social-icons/wordpress-s.png'); }
+    }
+
+    &.xing, 
+    &.xing.medium { @include data-image('social-icons/xing-m.png');
+      &.large { @include data-image('social-icons/xing.png'); }
+      &.small { @include data-image('social-icons/xing-s.png'); }
+    }
+
+    &.yelp, 
+    &.yelp.medium { @include data-image('social-icons/yelp-m.png');
+      &.large { background-image: url("../images/social-icons/yelp"); }
+      &.small { @include data-image('social-icons/yelp-s.png'); }
+    }
+
+    &.youtube, 
+    &.youtube.medium { @include data-image('social-icons/youtube-m.png');
+      &.large { @include data-image('social-icons/youtube.png'); }
+      &.small { @include data-image('social-icons/youtube-s.png'); }
+    }
+
+    &.youversion, 
+    &.youversion.medium { @include data-image('social-icons/youversion-m.png');
+      &.large { @include data-image('social-icons/youversion.png'); }
+      &.small { @include data-image('social-icons/youversion-s.png'); }
+    }
+
+    &.zerply, 
+    &.zerply.medium { @include data-image('social-icons/zerply-m.png');
+      &.large { @include data-image('social-icons/zerply.png'); }
+      &.small { @include data-image('social-icons/zerply-s.png'); }
+    }
+  }
+}

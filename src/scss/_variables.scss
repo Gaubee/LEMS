@@ -1,0 +1,135 @@
+///////////////////////
+//      settings     //
+///////////////////////
+$max-width:           1200px; // max container width (i.e. - 960px)
+$gutter:              10px;   // gutter spacing
+$classes:             true;   // enable CSS classes
+
+
+// base styles
+$background-color:    #ffffff;
+$font-color:          #2b2b2d;
+$font-size:           14px;
+$font-family:         Helvetica, Arial, Geneva, sans-serif;
+$link-color:          #489AC1;
+$link-active:         #198D98;
+$selection-color:     $font-color;
+$selection-text:      #ffffff;
+$border-color:        #dddddd;
+$button-color:        #1DABB8;
+$button-active:       #198D98;
+$button-text:         #ffffff;
+$button-active-text:  #ffffff;
+$error-color:         #A40400;
+$warning-color:       #FF971E;
+$success-color:       #5FB40E;
+$radius:              4px;
+
+
+
+
+///////////////////////
+//     fractions     //
+///////////////////////
+
+// wholes
+$one-whole:         percentage(1);
+
+// halves
+$one-half:          percentage(1/2);
+$two-halves:        $one-whole;
+
+// thirds
+$one-third:         percentage(1/3);
+$two-thirds:        percentage(2/3);
+$three-thirds:      $one-whole;
+
+// fourths
+$one-fourth:        percentage(1/4);
+$two-fourths:       $one-half;
+$three-fourths:     percentage(3/4);
+$four-fourths:      $one-whole;
+
+// fifths
+$one-fifth:         percentage(1/5);
+$two-fifths:        percentage(2/5);
+$three-fifths:      percentage(3/5);
+$four-fifths:       percentage(4/5);
+$five-fifths:       $one-whole;
+
+// sixths
+$one-sixth:         percentage(1/6);
+$two-sixths:        $one-third;
+$three-sixths:      $one-half;
+$four-sixths:       $two-thirds;
+$five-sixths:       percentage(5/6);
+$six-sixths:        $one-whole;
+
+// sevenths
+$one-seventh:       percentage(1/7);
+$two-sevenths:      percentage(2/7);
+$three-sevenths:    percentage(3/7);
+$four-sevenths:     percentage(4/7);
+$five-sevenths:     percentage(5/7);
+$six-sevenths:      percentage(6/7);
+$seven-sevenths:    $one-whole;
+
+// eighths
+$one-eighth:        percentage(1/8);
+$two-eighths:       $one-fourth;
+$three-eighths:     percentage(3/8);
+$four-eighths:      $one-half;
+$five-eighths:      percentage(5/8);
+$six-eighths:       $three-fourths;
+$seven-eighths:     percentage(7/8);
+$eight-eighths:     $one-whole;
+
+// ninths
+$one-ninth:         percentage(1/9);
+$two-ninths:        percentage(2/9);
+$three-ninths:      $one-third;
+$four-ninths:       percentage(4/9);
+$five-ninths:       percentage(5/9);
+$six-ninths:        $two-thirds;
+$seven-ninths:      percentage(7/9);
+$eight-ninths:      percentage(8/9);
+$nine-ninths:       $one-whole;
+
+// tenths
+$one-tenth:         percentage(1/10);
+$two-tenths:        $one-fifth;
+$three-tenths:      percentage(3/10);
+$four-tenths:       $two-fifths;
+$five-tenths:       $one-half;
+$six-tenths:        $three-fifths;
+$seven-tenths:      percentage(7/10);
+$eight-tenths:      $four-fifths;
+$nine-tenths:       percentage(9/10);
+$ten-tenths:        $one-whole;
+
+// elevenths
+$one-eleventh:      percentage(1/11);
+$two-elevenths:     percentage(2/11);
+$three-elevenths:   percentage(3/11);
+$four-elevenths:    percentage(4/11);
+$five-elevenths:    percentage(5/11);
+$six-elevenths:     percentage(6/11);
+$seven-elevenths:   percentage(7/11);
+$eight-elevenths:   percentage(8/11);
+$nine-elevenths:    percentage(9/11);
+$ten-elevenths:     percentage(10/11);
+$eleven-elevenths:  $one-whole;
+
+// twelfths
+$one-twelfth:        percentage(1/12);
+$two-twelfths:       $one-sixth;
+$three-twelfths:     $one-fourth;
+$four-twelfths:      $one-third;
+$five-twelfths:      percentage(5/12);
+$six-twelfths:       $one-half;
+$seven-twelfths:     percentage(7/12);
+$eight-twelfths:     $two-thirds;
+$nine-twelfths:      $three-fourths;
+$ten-twelfths:       $five-sixths;
+$eleven-twelfths:    percentage(11/12);
+$twelve-twelfths:    $one-whole;

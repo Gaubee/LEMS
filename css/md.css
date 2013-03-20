@@ -1,0 +1,44 @@
+.md{
+	border-radius: 6px;
+	background-color: #eee;
+	padding: 5px;
+	font-family: "Microsoft yahei","微软雅黑","Tahoma","Verdana","Arial","sans-serif";
+	cursor: default;
+}
+.md h1:hover,.md h2:hover,.md h3:hover,.md h4:hover,.md h5:hover,.md h6:hover{
+	color: #666;
+}
+.md p:hover{
+	border-radius: 6px;
+	background-color: #FFF;
+}
+.md blockquote p:before{
+	color: transparent;
+    content: "——";
+}
+.md li p:before{
+	content: " ";
+}
+.md blockquote:before{
+	color: transparent;
+}
+.md blockquote:after{
+	color: transparent;
+}
+.md_title li:before{
+	color: transparent;
+}
+.md_title li:after{
+	color: transparent;
+}
+.md_title li ul{
+    list-style: none;
+}
+.md_title li ul li:before{
+	color: transparent;
+    content: "—";
+}
+#back_to_top{
+	border-radius: 4px;
+	height: 26px;
+}
