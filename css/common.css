@@ -1,0 +1,10 @@
+#head_nav a.button{
+	border: 1px solid #DDDDDD;
+	border-radius:0px;
+}
+#head_nav li:first-child a, #head_nav li:first-child a:visited {
+    border-radius: 4px 0 0 4px;
+}
+#head_nav li:last-child a, #head_nav li:last-child a:visited {
+    border-radius: 0 4px 4px 0;
+}

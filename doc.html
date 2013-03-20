@@ -15,6 +15,7 @@
   <!-- GroundworkCSS -->
   <link type="text/css" rel="stylesheet" href="./css/groundwork.css">
   <link type="text/css" rel="stylesheet" href="./css/md.css">
+  <link type="text/css" rel="stylesheet" href="./css/common.css">
   <!--[if IE]>
   <link type="text/css" rel="stylesheet" href="./css/groundwork-ie.css">
   <![endif]-->
@@ -30,15 +31,15 @@
 
   <header class="white band padded">
     <div class="container">
-      <h2>LEMS</h2>
+      <h2><b>LEMS</b> (Laboratory equipment management system)</h2>
+      <cite class="pull-right">实验室设备管理系统主页</cite>
       <nav class="inline gap-top">
-        <ul>
-          <li><a href="./home.html"><i class="icon-home"></i></a></li>
-          <li><a href="./index.html">主页</a></li>
-          <li><a href="./doc.html">文档</a></li>
-          <li><a href="./download.html">下载</a></li>
-          <li><a href="./technology.html">技术支持</a></li>
-          <li><a href="https://github.com/Gaubee/LEMS">Github</a></li>
+        <ul id="head_nav">
+          <li><a href="./index.html" class="button"><i class="icon-home"></i> 主页</a></li>
+          <li><a href="./doc.html" class="button active"><i class="icon-file-alt"></i> 文档</a></li> 
+          <li><a href="./download.html" class="button disabled"><i class="icon-cloud-download"></i> 下载</a></li>
+          <li><a href="./technology.html" class="button disabled"><i class="icon-beaker"></i> 技术支持</a></li>
+          <li><a href="https://github.com/Gaubee/LEMS" class="button"><i class="icon-github-alt"></i> Github</a></li>
         </ul>
       </nav>
     </div>
@@ -50,25 +51,29 @@
 
     <article class="row">
       <aside class="one fourth right-three padded border-left">
-        <h1>文档列表</h1>
-        <ol id="md_doc_list" class="list">
-          <li><a href="#实验室设备管理系统可行性研究报告">可行性研究报告</a></li>
-          <li>Unordered list item #2</li>
-          <li>Unordered list item #3</li>
-          <li>Unordered list item #4</li>
-        </ol>
+        <h1><i class="icon-th-list"></i> 文档列表</h1>
+        <nav>
+          <ul id="md_doc_list">
+            <li><a class="button" href="#实验室设备管理系统可行性研究报告">可行性研究报告</a></li>
+            <li clsss="disabled"><a class="button disabled" href="#实验室设备管理系统项目开发计划">项目开发计划</a></li>
+            <li clsss="disabled"><a class="button disabled" href="#实验室设备管理系统规格说明书">需求规格说明书</a></li>
+          </ul>
+        </nav>
         <hr />
-        <h2>文档导航</h2>
+        <h2><i class="icon-list-ol"></i> 文档导航</h2>
         <ul id="md_doc_content_title" class="list md_title">
-          <li>Ordered list item #1</li>
-          <li>Ordered list item #2</li>
-          <li>Ordered list item #3</li>
+          <li>选择相应文档时进行加载</li>
         </ul>
         <div id="back_to_top"></div>
       </aside>
       <section class="three fourths left-one padded">
         <div class="md" id="md_doc_content">
-
+          <h1>
+            请在 <b>文档列表</b> 选择需要的文档进行加载
+            <hr />
+            <b>文档导航</b>处的可直接点击相应的导航进行快速的跳转。
+          </h1>
+          
         </div>
       </section>
     </article>
