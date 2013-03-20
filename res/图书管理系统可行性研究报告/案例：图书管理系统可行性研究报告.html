@@ -1,0 +1,663 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=gb2312">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.0.0.3 (Windows)">
+	<META NAME="AUTHOR" CONTENT="User">
+	<META NAME="CREATED" CONTENT="20060310;8490000">
+	<META NAME="CHANGEDBY" CONTENT="Freenet | COOL">
+	<META NAME="CHANGED" CONTENT="20090920;10420000">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-right: 3.04cm; margin-top: 2cm; margin-bottom: 2cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: justify; widows: 0; orphans: 0 }
+		P.western { font-family: "Times New Roman", serif; font-size: 10pt; so-language: en-US }
+		P.cjk { font-family: "宋体", "SimSun"; font-size: 10pt; so-language: zh-CN }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+		H1 { margin-top: 0.39cm; margin-bottom: 0.39cm; background: #cccccc; direction: ltr; color: #000000; line-height: 0.49cm; text-align: left; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H1.western { font-family: "Arial", sans-serif; font-size: 12pt; so-language: en-US; font-weight: bold }
+		H1.cjk { font-family: "黑体", "SimHei"; font-size: 12pt; so-language: zh-CN; font-weight: bold }
+		H1.ctl { font-family: "Arial", sans-serif; font-size: 10pt; so-language: ar-SA }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="zh-CN" TEXT="#000000" LINK="#000080" VLINK="#800000" BGCOLOR="#ffffff" DIR="LTR">
+<H1 CLASS="cjk" STYLE="margin-top: 0cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">1</SPAN></FONT><SUP><FONT FACE="黑体, SimHei"><FONT SIZE=3><SPAN LANG="zh-CN"><B><FONT SIZE=4 STYLE="font-size: 15pt">附录</FONT></B></SPAN></FONT></FONT><FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><FONT FACE="Arial, sans-serif"><FONT SIZE=3><SPAN LANG="en-US"><B><FONT SIZE=4 STYLE="font-size: 15pt">B</FONT></B></SPAN></FONT></FONT></SUP></SPAN></FONT><SUP><FONT FACE="黑体, SimHei"><FONT SIZE=3><SPAN LANG="zh-CN"><B><FONT SIZE=4 STYLE="font-size: 15pt">：图书管理系统可行性研究报告</FONT></B></SPAN></FONT></FONT></SUP></H1>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="华文行楷"><FONT SIZE=4 STYLE="font-size: 15pt"><B>图书管理系统</B></FONT></FONT></P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="黑体, SimHei"><FONT SIZE=4 STYLE="font-size: 16pt"><B>可 
+行  性  研  究  报  告</B></FONT></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=4><SPAN LANG="en-US"><B>1.</B></SPAN></FONT></FONT><FONT SIZE=4><B>引言</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3>1</FONT></SPAN></FONT><FONT SIZE=3>．</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3>1</FONT></SPAN></FONT><FONT SIZE=3><B>编写目的</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+编写本报告的目的是研究本系统的总体需求、实现方案，并分析开发系统的可行性，为决策者提供是否开发该系统的依据和建议。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>1.2</B></FONT></FONT></SPAN></FONT><FONT SIZE=3><B>项目背景</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-left: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+开发软件名称：图书管理系统。</P>
+<P CLASS="cjk" STYLE="margin-left: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+项目开发者：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">学院计算机科学系&ldquo;图书管理系统&rdquo;开发小组：</FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 2.96cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;&times;(&times;</SPAN></FONT>号，组长<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">)</SPAN></FONT>，<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;&times;(&times;</SPAN></FONT>号<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">)</SPAN></FONT>，&hellip;&hellip;</P>
+<P CLASS="cjk" STYLE="margin-left: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+用户单位：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;</SPAN></FONT>学院</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>1.3</B></SPAN></FONT></FONT><FONT SIZE=3><B>定义</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+图书管理系统对于现代图书馆而言，是能否发挥其教学科研的作用的至关重要技术平台。对于读者和图书管理员来说，是能否方便快速获取信息的关键。所以，图书管理系统应该能够为用户提供充足的信息和快捷方便的操作手段。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>1.4</B></SPAN></FONT></FONT><FONT SIZE=3><B>参考资料</B></FONT></P>
+<OL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#333333">钱乐秋等，《软件工程》，青还大学出版社；</FONT></P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#333333">张害藩，</FONT>《软件工程导论》（第四版），清华大学出版社；</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">王珊等，《数据库原理及设计》，清华大学出版社；</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">赵池龙等，《软件工程实践教程》，电子工业出版社。</P>
+</OL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=4><SPAN LANG="en-US"><B>2.</B></SPAN></FONT></FONT><FONT SIZE=4><B>可行性研究的前提</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+随着计算机应用的日益普及和深化，网上办公已经成为一种趋势。本项目要开发的是基于局域网和互联网的图书管理系统。由于学院藏书量大，借书的学生多，原来的人工工作方式不仅会造成办理时间的延误和人力资源的浪费，特别是在借书高峰期时这种冲突更加明显，而且存在着各种信息不易存放、易丢失、难以备份和查询等缺点。因此，实现一个将各种图书管理和服务功能集成起来的管理信息系统就显得十分必要，既可以节省资源，又可以有效存储、更新、查询信息，提高工作和服务效率。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+开发的系统要求界面友好，方便直观。既要方便管理员对图书信息进行添加、删除、修改、查询和统计等管理，又要方便学生借书、还书和续借等业务的办理。将数据库发布到互联网上，进行资源共享，方便学生可以在自己的权限内对图书信息进行访问，查询相关信息和进行续借操作。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>2.1</B></SPAN></FONT></FONT><FONT SIZE=3><B>要求
+       </B></FONT>
+</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US"><B>A</B></SPAN></FONT><B>、主要功能</B></P>
+<UL>
+	<UL>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">读者管理：管理员要为每个读者建立借阅账户，并&#32102;读者发放不同类别的借阅卡（借阅卡可提供卡号、读者姓名）。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">借阅管理：持有借阅卡的读者可以通过管理员（作为读者的代理人与系统交互）借阅、归还图书。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">读者查询：可通过互联网或图书馆内查询终端查询图书信息和个人借阅情况，以及续借图书（系统审核符合续借条件）。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">图书管理：图书管理员定期或不定期对图书信息进行入库、修改、删除等图书信息管理以及注销（不外借），包括图书类别和出版社管理。</P>
+	</UL>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>B</B></SPAN></FONT><B>、主要性能</B></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+可以方便快捷有效地完成借阅、查询等的各项操作，录入数据合法性校验程序高，查询速度快（不超<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT>秒）。保证信息的正确和及时更新，并降低信息访问的成本。技术先进且高可靠性。<FONT FACE="Times New Roman, serif">
+</FONT>
+</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>C</B></SPAN></FONT><B>、可扩展性</B></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+能够适应应用要求的变化和修改，具有灵活的可扩充性。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>D</B></SPAN></FONT><B>、安全性</B></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+具有较高的安全性。系统对不同的用户提供不同的功能模块，只有具有一定权限的管理员用户才能允许有借、还书权限，只有具有高级权限的部门管理者或维护人员用户才能对用户进行管理，一般的读者用户只能查看图书信息和借阅情况。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+还应具有一定的保护机制，防止系统被恶意攻击，信息被恶意修改和窃取。有完善的备份机制，如果系统被破坏应该能快速恢复。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>E</B></SPAN></FONT><B>、完成期限</B></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2007</SPAN></FONT>年<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">3</SPAN></FONT>月<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">1</SPAN></FONT>日至<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">9</SPAN></FONT>月<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT>日，共<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">7</SPAN></FONT>个月。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>2.2</B></FONT></FONT></SPAN></FONT><FONT SIZE=3><B>目标</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+所建议系统的开发目标包括<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">:</SPAN></FONT></P>
+<UL>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%">
+	减少人力与管理费用；</P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%">
+	提高信息准确度；</P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%">
+	改进管理和服务<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">;</SPAN></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%">
+	建立高效的信息传输和服务平台，提高信息处理速度和利用率。<FONT FACE="Times New Roman, serif">
+	</FONT>
+	</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>2.3</B></FONT></FONT></SPAN></FONT><FONT SIZE=3><B>条件，假定和限定</B></FONT></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">建议软件寿命：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">10</SPAN></FONT>年。</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">进行系统方案选择比较的时间：为<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">10</SPAN></FONT>天。</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">经济来源：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;</SPAN></FONT>学院。</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">硬件条件：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">PC</SPAN></FONT>机<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6</SPAN></FONT>台，服务器<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">3</SPAN></FONT>台，局域网，<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">INTERNET</SPAN></FONT>。</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">软件条件：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">WINDOWS
+	2000Server</SPAN></FONT>和<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">XP</SPAN></FONT>操作系统，<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">OFFICE</SPAN></FONT>软件，<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">ORACLE
+	</SPAN></FONT>数据库，浏览器等。</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>2.4</B></FONT></FONT></SPAN></FONT><FONT SIZE=3><B>决定可行性的主要因素</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+本次可行性分析是按照软件工程的规范步骤进行的，即按复查项目目标和规模，研究目前正使用的系统，导出新系统的高层逻辑模型，重新定义问题这一循环反复的过程进行。然后提出系统的实现方案，推荐最佳方案，对所推荐的方案进行经济、技术、用户操作和法律的可行性分析，最后给出系统是否值得开发的结论。以上分析结果写城本文档。</P>
+<UL>
+	<UL>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">成本<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">/</SPAN></FONT>效益分析结果：效益<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&gt;</SPAN></FONT>成本；</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">技术可行：现有技术可完成开发任务；</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">操作可行：系统能被现有的工作人员快速掌握并使用；</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">法律可行：所使用工具和技术及数据信息不违反法律<FONT SIZE=3>。</FONT></P>
+	</UL>
+</UL>
+<P CLASS="cjk" STYLE="margin-left: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" STYLE="margin-left: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>3.</B></FONT></FONT></SPAN></FONT><FONT SIZE=4><B>对现有系统的分析</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>3.1</B></SPAN></FONT></FONT><FONT SIZE=3><B>业务流程及数据流图</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>(1)</B></SPAN></FONT><B>组织结构图与信息流关系</B></P>
+<P CLASS="cjk" STYLE="margin-left: 1.11cm; margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A_html_1d77fda9.gif" NAME="图形1" ALIGN=BOTTOM WIDTH=574 HEIGHT=250 BORDER=0><IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A_html_m3cbd37d7.gif" ALIGN=LEFT HSPACE=12><IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A_html_6c356046.gif"></P>
+<P CLASS="cjk" STYLE="margin-left: 1.11cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>(2)</B></SPAN></FONT></FONT><FONT SIZE=3><B>顶层数据流图</B></FONT></P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A_html_m560cae9c.gif" NAME="图形2" ALIGN=BOTTOM WIDTH=503 HEIGHT=157 BORDER=0></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=4><B>4.</B></FONT></SPAN></FONT><FONT SIZE=4><B>所建议的系统</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+所建议系统是<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">C/S</SPAN></FONT>和<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">B/S</SPAN></FONT>模式结合。系统管理、书籍管理、读者管理和借阅管理等大部分的功能通过图书馆内的局域网实现，有利于提高系统的效率和安全性；图书信息查询、个人借阅情况查询、续借等功能可在互联网上进行，利于有效地提高系统使用效率；能在一定程度上实现局域网和互联网数据交换的自动化。用户在经过身份确认后，系统按照权限的不同向其不同各种类型用户所对应的功能。系统实现方案如下图。</P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A_html_4f032947.gif" NAME="图形3" ALIGN=BOTTOM WIDTH=413 HEIGHT=197 BORDER=0></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>4.1</B></SPAN></FONT></FONT><FONT SIZE=3><B>影响</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.56cm; margin-bottom: 0cm; line-height: 150%">
+ 在建立所建议系统时，预期会带来的影响包括以下几个方面。</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>对设备的影响</B></P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+由于所建议系统是基于<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">WINDOWS</SPAN></FONT>操作系统和互联网的，所以需要配备足够符合以上列出的各种软硬件条件的计算机和通信线路。系统失效后，服务器端需要利用备份的数据库恢复数据信息，要求要有足够的数据备份空间。</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>对软件的影响</B></P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+需要落实是否有符合本报告所列出的正版的软件环境，如果没有则需要购买。</P>
+<UL>
+	<UL>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>对用户单位机构的影响</B></P>
+	</UL>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+投入使用前还需改进现有的管理模式。</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>对开发的影响</B></P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">   
+开发过程需要用户进行密切的配合，准确阐明需求。</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>对经费开支的影响</B>：</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">   
+除了需要支付开发单位的有关费用外，每年还需要一定的运行维护费用（见经济可行性分析）。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3><B>4.2
+</B></FONT></SPAN></FONT><FONT SIZE=3><B>技术条件方面的可行性</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">  
+本系统是一个基于局域网、互联网和<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">WINDOWS</SPAN></FONT>操作的系统，现有技术已较为成熟，利用现有技术完全可以实现系统开发目标。同时，开发期限较为宽裕，预计可以在规定期限内完成开发任务。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=4><SPAN LANG="en-US"><B>5.</B></SPAN></FONT></FONT><FONT SIZE=4><B>经济可行性分析</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3><B>5.1</B></FONT></SPAN></FONT><FONT SIZE=4><B>投资成本</B></FONT></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>一次性支出</B></P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT COLOR="#000000">（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="&#718;&#805;, Times New Roman, serif">1</FONT></FONT></SPAN></FONT><FONT COLOR="#000000">）</FONT>系统开发、建立费用共<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">23</SPAN></FONT>万元。其中：</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">本系统开发期为<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">7</SPAN></FONT>个月，需开发人员<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6</SPAN></FONT>人（不一定都是参加满<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">7</SPAN></FONT>个月）。根据软件系统的规模估算，开发工作量约为<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT>人月，每人月的人工费按<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5000</SPAN></FONT>元计算，开发费用为<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">15</SPAN></FONT>万元。</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">书籍、读者等基础信息建立需要<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">20</SPAN></FONT>人<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2</SPAN></FONT>个月即<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">40</SPAN></FONT>人月，每人月的人工费用按<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2000</SPAN></FONT>元计算，需<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">8</SPAN></FONT>万元。</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2</SPAN></FONT>）硬件设备费共<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">13</SPAN></FONT>万元，其中：微机<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">6</SPAN></FONT>台约<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">3</SPAN></FONT>万元；服务器<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">3</SPAN></FONT>台及网络等设备费<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">10</SPAN></FONT>万元。<FONT FACE="Times New Roman, serif">
+      </FONT>
+</P>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 0.93cm; margin-bottom: 0cm; line-height: 150%">
+（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">3</SPAN></FONT>）外购开发工具、软件环境费用共<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">9</SPAN></FONT>万元。</P>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 0.93cm; margin-bottom: 0cm; line-height: 150%">
+（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">4</SPAN></FONT>）其他费费用共<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2</SPAN></FONT>万元。</P>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 1.11cm; margin-bottom: 0cm; line-height: 150%">
+一次性支出总费用：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">47</SPAN></FONT>万元。</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>经常性费用</B></P>
+</UL>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+主要是系统运行费用，假设本系统运行期<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">10</SPAN></FONT>年，每年的运行费用<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">(</SPAN></FONT>包括系统维护、设备维护等<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">)5</SPAN></FONT>万元，按年利率<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5%</SPAN></FONT>计算如下表。</P>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+系统投资成本总额为：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">47+38.6082=<B>85.6082</B></SPAN></FONT>万元。</P>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=484 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=63>
+		<COL WIDTH=68>
+		<COL WIDTH=74>
+		<COL WIDTH=90>
+		<COL WIDTH=117>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><B>年份</B></P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm"><B>将来费用</B></P>
+				<P CLASS="cjk" ALIGN=CENTER><B>（万元）</B></P>
+			</TD>
+			<TD WIDTH=74 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A_html_m5eb8cea7.gif" NAME="对象1" ALIGN=ABSMIDDLE WIDTH=86 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm"><B>现在费用值</B></P>
+				<P CLASS="cjk" ALIGN=CENTER STYLE="text-indent: 0.37cm"><B>（万元）</B></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="margin-left: 1.11cm; text-indent: -1.11cm"><B>累计现在费用值（万元）</B></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=63 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第一年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.05</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>4.7619</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=117 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>4.7619</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=63 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第二年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.1025</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>4.5351</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>9.2970</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=63 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第三年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.1576</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>4.3191</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>13.6161</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第四年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.2155</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>4.1135</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>17.7296</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第五年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.2763</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>3.9176</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>21.6472</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第六年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.3401</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>3.7310</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>25.3782</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第七年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.4071</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>3.5534</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>28.9316</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第八年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.4775</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>3.3841</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>32.3157</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第九年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.5513</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>3.2230</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>35.5387</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第十年</P>
+			</TD>
+			<TD WIDTH=68 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=74 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.6289</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=90 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>3.0695</B></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=117 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="楷体_GB2312, monospace"><SPAN LANG="en-US"><B>38.6082</B></SPAN></FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>5.2</B></SPAN></FONT></FONT><FONT SIZE=3><B>收益</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+假设投入本系统，效率可以提高<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">50%</SPAN></FONT>，以现有的工作人员<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">20</SPAN></FONT>人计算，可减少<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">10</SPAN></FONT>人，每人每月平均工资按<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2500</SPAN></FONT>元计算，每年节约人员工资<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">10&times;12&times;0.25=30</SPAN></FONT>万元<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">/</SPAN></FONT>年。按年利率<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5%</SPAN></FONT>计算，效益计算如下表。</P>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+系统收益总额为：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>231.6437</B></SPAN></FONT>万元。</P>
+<P CLASS="cjk" STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=477 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=63>
+		<COL WIDTH=76>
+		<COL WIDTH=77>
+		<COL WIDTH=84>
+		<COL WIDTH=105>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><B>年份</B></P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm"><B>将来收益值</B></P>
+				<P CLASS="cjk" ALIGN=CENTER STYLE="text-indent: 0.37cm"><B>（万元）</B></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A_html_m5eb8cea7.gif" NAME="对象2" ALIGN=ABSMIDDLE WIDTH=86 HEIGHT=21></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm"><B>现在收益值</B></P>
+				<P CLASS="cjk" ALIGN=CENTER STYLE="text-indent: 0.37cm"><B>（万元）</B></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="margin-left: 0.74cm; text-indent: -0.74cm"><B>累计现在收益值（万元）</B></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=63 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第一年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.05</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>28.5714</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>28.5714</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第二年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.1025</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>27.2109</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>55.7823</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第三年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.1576</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>25.9151</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>81.6974</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第四年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.2155</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>24.6811</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>106.3785</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第五年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.2763</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>23.5058</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>129.8843</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第六年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.3401</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>22.3846</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>152.2689</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第七年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.4071</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>21.3187</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>173.5876</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第八年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.4775</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>20.3035</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>193.8911</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第九年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.5513</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>19.3367</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>213.2278</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=63 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>第十年</P>
+			</TD>
+			<TD WIDTH=76 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">30</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=77 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US">1.6289</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=84 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>18.4159</B></SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=105 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>231.6437</B></SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>5.3</B></SPAN></FONT></FONT><FONT SIZE=3><B>成本</B></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><SPAN LANG="en-US"><B>/</B></SPAN></FONT></FONT><FONT SIZE=3><B>收益分析：</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+在<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">10</SPAN></FONT>年期内，系统总成本<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">85.6082</SPAN></FONT>万元，系统总收益<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">231.6437</SPAN></FONT>万元。</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">投资回收期：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">3+</SPAN></FONT>（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">85.6082</SPAN></FONT>－<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">81.6974</SPAN></FONT>）<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">/24.6811=3.12</SPAN></FONT>年；</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">投资回报率：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;</SPAN></FONT>％</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-left: 0.74cm; text-indent: 1.11cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">(</SPAN></FONT>即为<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">85.6082=30
+/(1+j)+30/</SPAN></FONT>（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">1+j</SPAN></FONT>）<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><SUP>2</SUP>+&hellip;+30/</SPAN></FONT>（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">1+j</SPAN></FONT>）<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><SUP>10</SUP></SPAN></FONT>的方程解<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">i&times;100)</SPAN></FONT></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">纯收益：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">231.6437</SPAN></FONT>－<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">85.6082</SPAN></FONT>＝<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">146.0355</SPAN></FONT>万元</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+从经济上考虑，开发本系统完全可行的。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>6.</B></FONT></FONT></SPAN></FONT><FONT SIZE=4><B>社会因素可行性分析</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3><B>6.1</B></FONT></SPAN></FONT><FONT SIZE=3><B>法律方面的可行性</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+所有软件都用正版，技术资料都由提出方保管，数据信息均可保证合法来源。所以，在法律方面是可行的。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>6.2</B></FONT></FONT></SPAN></FONT><FONT SIZE=3><B>用户使用可行性</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+使用本系统的人员均有一定计算机应用基础，系统维护员由计算机的专业人员担任，所有人员都要经过本系统的使用培训。经过简单培训人员就会熟练使用本软件。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=4>7</FONT></FONT><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>.</B></FONT></FONT></SPAN></FONT><FONT SIZE=4><B>结论</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+本项目具有方便快捷等优势，投资回报利益大，使得图书管理实现电子化，符合社会信息化发展的需要，技术、经济、操作、法律方面都是可行的，可以开发本系统。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,1148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=gb2312">
+	<TITLE>如何写开发计划（例）</TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.0.0.3 (Windows)">
+	<META NAME="AUTHOR" CONTENT="Mchenxf">
+	<META NAME="CREATED" CONTENT="20070311;9380000">
+	<META NAME="CHANGEDBY" CONTENT="Freenet | COOL">
+	<META NAME="CHANGED" CONTENT="20100927;9130000">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-right: 3.17cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: justify; widows: 0; orphans: 0 }
+		P.western { font-family: "Times New Roman", serif; font-size: 10pt; so-language: en-US }
+		P.cjk { font-family: "宋体", "SimSun"; font-size: 10pt; so-language: zh-CN }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+		H1 { margin-top: 0.6cm; margin-bottom: 0.58cm; direction: ltr; color: #000000; line-height: 200%; text-align: justify; page-break-inside: avoid; widows: 0; orphans: 0; page-break-after: avoid }
+		H1.western { font-family: "Times New Roman", serif; font-size: 22pt; so-language: en-US; font-weight: bold }
+		H1.cjk { font-family: "宋体", "SimSun"; font-size: 22pt; so-language: zh-CN; font-weight: bold }
+		H1.ctl { font-family: "Times New Roman", serif; font-size: 22pt; so-language: ar-SA; font-weight: bold }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="zh-CN" TEXT="#000000" LINK="#000080" VLINK="#800000" DIR="LTR">
+<H1 CLASS="cjk" STYLE="margin-top: 0cm; margin-bottom: 0cm; line-height: 150%">
+<SPAN STYLE="background: #d8d8d8"><FONT SIZE=4 STYLE="font-size: 15pt">附录</FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4 STYLE="font-size: 15pt"><SPAN LANG="en-US">A</SPAN></SPAN></FONT></FONT><SPAN STYLE="background: #d8d8d8"><FONT SIZE=4 STYLE="font-size: 15pt">：图书管理系统项目开发计划</FONT></SPAN></H1>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333"><FONT FACE="华文新魏"><FONT SIZE=4 STYLE="font-size: 15pt"><B>图书管理系统</B></FONT></FONT></FONT></P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333"><FONT FACE="黑体, SimHei"><FONT SIZE=4 STYLE="font-size: 16pt"><B>项
+ 目  开  发  计  划</B></FONT></FONT></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>1&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=4><B>引言</B></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B><BR></B></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>1
+.1&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>编写目的</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+  </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">本开发计划的目的是：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><BR>
+  
+a</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">．把在开发过程中对各项工作的人员、分工、经费、系统资源条件等问题的安排用文档形式记载下来，以便根据本计划开展和检查本项目工作，保证项目开发成功；<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><BR>
+   b</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">．制订项目组开发过程中的评审和审查计划，明确相应的质量管理负责人员；<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><BR>
+   c. </FONT></FONT></SPAN></FONT><FONT COLOR="#333333">规定软件配置管理的活动内容和要求，明确配置管理工作的人员。<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><BR>&nbsp;
+&nbsp;<BR></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>1
+.2&nbsp; </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>背景</B></FONT></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">项目软件名称：图书管理系统。</FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+随着计算机应用的日益普及和深化，网上办公已经成为一种趋势。本项目要开发的是基于局域网和互联网的图书管理系统。由于学院藏书量大，借书的学生多，原来的人工工作方式不仅会造成办理时间的延误和人力资源的浪费，特别是在借书高峰期时这种冲突更加明显，而且存在着各种信息不易存放、易丢失、难以备份和查询等缺点。因此，实现一个将各种图书管理和服务功能集成起来的管理信息系统就显得十分必要，既可以节省资源，又可以有效存储、更新、查询信息，提高工作和服务效率。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+开发的系统要求界面友好，方便直观。既要方便管理员对图书信息进行添加、删除、修改、查询和统计等管理，又要方便学生借书、还书和续借等业务的办理。将数据库发布到互联网上，进行资源共享，方便学生可以在自己的权限内对图书信息进行访问，查询相关信息和进行续借操作。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT COLOR="#333333">特别要求：需求分析必须详细，并且有相关专家合作进行，</FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 0.74cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">任务来源：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">学院；</FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">开发单位：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">学院计算机科学系&ldquo;图书管理系统&rdquo;开发小组：</FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 2.59cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;&times;(&times;</SPAN></FONT>号，组长<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">)</SPAN></FONT>，<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;&times;(&times;</SPAN></FONT>号<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">)</SPAN></FONT>，<FONT FACE="Times New Roman, serif">&hellip;&hellip;</FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 2.59cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>1
+.3&nbsp; </B></SPAN></FONT></FONT><FONT SIZE=3><B>参考资料</B></FONT></FONT></P>
+<OL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">钱乐秋，赵文耘，牛军钰<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">.</FONT></SPAN></FONT>软件工程<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">.</FONT></SPAN></FONT>清华大学出版社；</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">王珊等，《数据库原理及设计》，清华大学出版社；</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">赵池龙等，《软件工程实践教程》，电子工业出版社。</P>
+</OL>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>1
+.4&nbsp; </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>术语和缩写词
+</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+    </FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333">（
+暂无）</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>2&nbsp;
+</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=4><B>任务概要</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>2
+.1 </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>工作内容</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+  </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">本项目开发过程中需要进行的主要工作为：开发符合用户需求的软件，并编制相关文档和计划。</FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>2
+.2&nbsp; </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>产品</B></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B><BR>2
+.2.1&nbsp; &nbsp; </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>程序</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>2
+.2.2&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>文档</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+   </FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333">文档格式要求按照</FONT>我国<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">GB/T8567-1988</FONT></SPAN></FONT>国家标准和<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">IEEE/ANSI830-1993</FONT></SPAN></FONT>标准<FONT COLOR="#333333">规范要求进行。软件文档目录包括：</FONT></P>
+<UL>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">项目开发计划</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">可行性报告</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件需求规格说明</FONT></P>
+</UL>
+<UL>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件概要设计规格说明；</FONT></P>
+</UL>
+<UL>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件详细设计规格说明；</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件标准规范</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件测试计划</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件测试办法</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件可靠性和安全性设计指南</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">硬件总体设计报告</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件代码</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">测试分析报告</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件可靠性和安全性设计检查单</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件评审检查单</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件使用说明</FONT></P>
+</UL>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 0.62cm; text-indent: -0.62cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>2
+.2.3&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>服务</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333">培训：软件使用及安装，时间<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">5</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天。</FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">软件支持：略。</FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>2
+.2.4&nbsp; &nbsp; </B></SPAN></FONT></FONT><FONT SIZE=3><B>验收标准和验收计划</B></FONT></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; text-indent: 0.85cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">验收标准：经用户和开发小组负责人双方签字确认的&ldquo;需求规格说明书&rdquo;。重点确认软件的可靠性、易使用性和功能完整性。</FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; text-indent: 0.85cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><BR></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>3&nbsp;
+</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=4><B>实施总计划</B></FONT></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>3
+.1&nbsp; </B></SPAN></FONT></FONT><FONT SIZE=3><B>阶段划分</B></FONT></FONT></P>
+<OL>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">可行性分析：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">10</SPAN></FONT>天</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">需求分析：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">15</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天；</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">软件设计<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">(</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">概要设计和详细设计<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">)</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">20</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天；</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">数据库建立：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">15</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天；</FONT></P>
+</OL>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; text-indent: 1.02cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><B>(</B></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><B>以下</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><B>6</B></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><B>个子系统可并行编码、单元测试</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><B>)</B></FONT></FONT></SPAN></FONT></P>
+<OL START=5>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">子系统<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">1</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">编码测试：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">5</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">;</FONT></FONT></SPAN></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">子系统<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">1</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">编码测试：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">10</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">;</FONT></FONT></SPAN></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">子系统<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">1</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">编码测试：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">30</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">;</FONT></FONT></SPAN></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">子系统<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">1</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">编码测试：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">15</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">;</FONT></FONT></SPAN></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">子系统<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">1</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">编码测试：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">10</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">;</FONT></FONT></SPAN></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">子系统<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">1</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">编码测试：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">15</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">;</FONT></FONT></SPAN></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">硬件安装<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">:20</SPAN></FONT>天<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">;</SPAN></FONT></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">硬件测试<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">:20</SPAN></FONT>天<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">;</SPAN></FONT></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">集成测试：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">20</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">;</FONT></FONT></SPAN></FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">系统安装、培训：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">15</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天；</FONT></P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	<FONT COLOR="#333333">验收测试<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">:20</SPAN></FONT>天</FONT></P>
+</OL>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 0.64cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 0.64cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<BR>
+</P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>3
+.2&nbsp; </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>人员组成</B></FONT></FONT><FONT COLOR="#333333">
+</FONT>
+</P>
+<CENTER>
+	<TABLE WIDTH=393 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=155>
+		<COL WIDTH=208>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><B>角色</B></FONT></P>
+			</TD>
+			<TD WIDTH=208 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><B>参加人员</B></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				项目管理</FONT></P>
+			</TD>
+			<TD WIDTH=208 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				</FONT><FONT COLOR="#333333">分析员&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+				&nbsp;&nbsp; &nbsp;          </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=208 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				 </FONT>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">&nbsp;</FONT><FONT COLOR="#333333">高级程序员
+				&nbsp;  &nbsp;&nbsp;              </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=208 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="text-indent: 0.19cm; widows: 2; orphans: 2">
+				<FONT COLOR="#333333">程序员</FONT><FONT COLOR="#333333">&nbsp;&nbsp;&nbsp;
+				 </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=208 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">&nbsp;测试人员&nbsp;</FONT></P>
+			</TD>
+			<TD WIDTH=208 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;&nbsp;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;&nbsp; &nbsp;</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 0.19cm; widows: 2; orphans: 2">
+				<FONT COLOR="#333333">配置管理员，，文档编制辅助人员&nbsp;培训师</FONT></P>
+			</TD>
+			<TD WIDTH=208 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;&nbsp;(</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">兼<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">)</FONT></FONT></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=155 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				</FONT><FONT COLOR="#333333">硬件安装、测试人员&nbsp; &nbsp;  </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=208 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;&nbsp;&nbsp;
+				&nbsp;&nbsp;</FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 0.74cm; text-indent: -0.74cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>3
+.3&nbsp; </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>任务的分解和人员分工</B></FONT></FONT><FONT COLOR="#333333">
+   </FONT>
+</P>
+<CENTER>
+	<TABLE WIDTH=481 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=211>
+		<COL WIDTH=120>
+		<COL WIDTH=106>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><B>任务</B></FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><B>姓名</B></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><B>参加时间</B></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">项目管理</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="text-indent: 0.74cm; widows: 2; orphans: 2">
+				<FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">软件配置管理，质量保证</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">（兼）</FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="text-indent: 0.74cm; widows: 2; orphans: 2">
+				<FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">可行性分析</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				 </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">部分</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">需求分析</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				 </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">软件设计</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;</FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">数据库建立</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;</FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">子系统</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333">1</FONT></SPAN></FONT><FONT COLOR="#333333">编码、测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;&nbsp;
+				&nbsp;&nbsp; &nbsp;</FONT></FONT></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">子系统</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333">2</FONT></SPAN></FONT><FONT COLOR="#333333">编码、测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				 </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">子系统</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333">3</FONT></SPAN></FONT><FONT COLOR="#333333">编码、测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				 </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">子系统</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333">4</FONT></SPAN></FONT><FONT COLOR="#333333">编码、测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;</FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">子系统</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333">5</FONT></SPAN></FONT><FONT COLOR="#333333">编码、测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;</FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">子系统</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333">6</FONT></SPAN></FONT><FONT COLOR="#333333">编码、测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;&nbsp;
+				&nbsp;&nbsp; &nbsp;</FONT></FONT></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">硬件安装</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				 </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">部分</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">硬件测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				 </FONT>
+				</P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">部分</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">模块、</FONT><FONT COLOR="#333333">集成测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;</FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				   </FONT><FONT COLOR="#333333"> </FONT><FONT COLOR="#333333">部分</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">系统安装</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333">/</FONT></SPAN></FONT><FONT COLOR="#333333">培训</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;
+				&nbsp;</FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT><FONT COLOR="#333333">全部</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=211 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">验收测试</FONT></P>
+			</TD>
+			<TD WIDTH=120 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;&times;&nbsp;,&hellip;
+				&nbsp;&nbsp; &nbsp;</FONT></FONT></SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				  </FONT><FONT COLOR="#333333">  </FONT><FONT COLOR="#333333">部分</FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">用户单位领导小组：</FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; text-indent: 1.11cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">负责人：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; text-indent: 1.11cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">成员：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">，&hellip;<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><BR>
+     </FONT></FONT></SPAN></FONT><FONT COLOR="#333333">职责：提供、协调、确认需求，验收测试。<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><BR></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>3
+.4&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>进度和完成的最后期限</B></FONT></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">项目启动时间：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">2007-3-1</FONT></FONT></SPAN></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT COLOR="#333333">项目交付时间：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">2007-9-30</FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><B><BR></B></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+  
+</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">进度：包括可行性分析、需求分析</FONT>、软件概要设计、软件详细设计、编码、测试、安装、转换、确认、培训等阶段活动和任务的进度安排，具体安排见&ldquo;<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">PERT</FONT></SPAN></FONT>网络图&rdquo;和&ldquo;进度计划表&rdquo;。</P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>3
+.5&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>经费预算</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+   </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">100</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">万元人民币<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><BR></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>3
+.6&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>关键问题</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+   </FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333">（略）</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>3
+.7&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>独立确认（验收）测试工作计划和安排</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+   </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">测试由<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">、&hellip;负责进行；测试数据由<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">、&hellip;提供；编码结束后<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">30</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">天内；</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+  <BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>4&nbsp;
+</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=4><B>支持需求</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>4
+.1&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>计算机系统支持</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+  </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">本软件的开发需要工作平台。</FONT></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>硬件环境：</B></P>
+</UL>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">服务器</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">	
+   (1) </SPAN></FONT>处理器（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">CPU</SPAN></FONT>）：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Pentium
+900M (</SPAN></FONT>推荐<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Pentium
+4 1.2G</SPAN></FONT>）</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">	
+   (2) </SPAN></FONT>内存容量（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">RAM</SPAN></FONT>）：至少<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">256M</SPAN></FONT>（推荐
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">512M</SPAN></FONT>）</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">客户端</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">	
+   (1) </SPAN></FONT>处理器（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">CPU</SPAN></FONT>）：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Pentium
+133M </SPAN></FONT>或更高</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">	
+   (2) </SPAN></FONT>内存容量（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">RAM</SPAN></FONT>）：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">64M</SPAN></FONT>或更高</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>软件环境</B></P>
+</UL>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">数据库服务器端</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 1.48cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(1) </SPAN></FONT>操作系统：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Microsoft
+Windows 2000</SPAN></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 1.48cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(2)
+</SPAN></FONT>数据库管理系统：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Oracle</SPAN></FONT>，配置<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">TCP/IP</SPAN></FONT>协议</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Web</SPAN></FONT>服务器端</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 1.48cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(1) </SPAN></FONT>操作系统：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Microsoft
+Windows 2000</SPAN></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 1.48cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(2) Internet
+</SPAN></FONT>信息服务（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">IIS</SPAN></FONT>）<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">6.0</SPAN></FONT>管理器</P>
+<P CLASS="cjk" STYLE="text-indent: 1.48cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(3) Visual Studio.NET
+2003</SPAN></FONT>，配置<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">TCP/IP</SPAN></FONT>协议
+</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">客户端</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 1.48cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(1) </SPAN></FONT>操作系统：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Windows
+98/2000/2003/XP</SPAN></FONT></P>
+<P CLASS="cjk" STYLE="margin-left: 2.43cm; text-indent: -0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">(2)
+Web</FONT></SPAN></FONT>浏览器：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">Internet
+Explorer 5.0</FONT></SPAN></FONT>以上或<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">Netscape
+4.0</FONT></SPAN></FONT>以上，配置<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">TCP/IP</FONT></SPAN></FONT>协议</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>4
+.2&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>需要交办单位承担的工作</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+   </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">在需求分析和安装、测试、培训期间，合理安排本单位工作，为开发小组提供足够的时间、人员支持。<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><BR></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>4
+.3&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>需要其它单位提供的条件</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+  </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+ </FONT></FONT></SPAN></FONT><FONT COLOR="#333333">测试数据。</FONT></P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E8%AE%A1%E5%88%92_html_m3ebcab5.gif" NAME="图形1" ALIGN=BOTTOM WIDTH=540 HEIGHT=477 BORDER=0><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT></SPAN></FONT><BR>
+</P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<FONT COLOR="#333333">&ldquo;</FONT><FONT COLOR="#333333"><B>图书管理系统&rdquo;进度计划表</B></FONT></P>
+<CENTER>
+	<TABLE WIDTH=596 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=28>
+		<COL WIDTH=106>
+		<COL WIDTH=58>
+		<COL WIDTH=58>
+		<COL WIDTH=46>
+		<COL WIDTH=46>
+		<COL WIDTH=58>
+		<COL WIDTH=34>
+		<COL WIDTH=34>
+		<TR>
+			<TD WIDTH=28 VALIGN=TOP STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>活动编号</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; widows: 2; orphans: 2">
+				<FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>活动任</B></FONT></FONT></P>
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>务名称</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>开始时间</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>结束时间</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>持续时间（天）</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>负责人</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>参加人员</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>预算经费</B></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt"><B>其它资源</B></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">A</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">可行性分析</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.03.1</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.03.14</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">10</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333">
+				    </FONT>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">B</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">需求分析</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.03.15</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.04.04</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">15</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">C</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">软件设计</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.04.05</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.5.07</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">20</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">D</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">数据库建立</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.08</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.28</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">15</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">E</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">子系统</FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">1</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">编码、测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.29</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.06.04</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">5</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">F</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">子系统</FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">2</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">编码、测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.29</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.06.11</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">10</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">G</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">子系统</FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">3</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">编码、测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.29</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.07.09</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">30</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">H</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">子系统</FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">4</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">编码、测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.29</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.06.18</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">15</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">I</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">子系统</FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">5</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">编码、测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.29</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.06.11</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">10</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">J</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">子系统</FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">6</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">编码、测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.29</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.06.18</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">15</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">K</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">硬件安装</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.05.29</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.06.25</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">20</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">L</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">硬件测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.06.26</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.07.23</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">20</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">M</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">集成测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.07.10</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.08.06</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">20</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">N</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">系统安装</FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">/</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">培训</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.08.07</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.08.27</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">15</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=28 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US">O</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=106 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">验收测试</FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.08.28</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">2007.09.24</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">20</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt"><SPAN LANG="en-US">&times;&times;&times;</SPAN></FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=58 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=2 STYLE="font-size: 9pt">，</FONT></FONT><FONT COLOR="#333333"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 9pt">&hellip;</FONT></FONT></FONT></P>
+			</TD>
+			<TD WIDTH=34 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=34 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" STYLE="widows: 2; orphans: 2"><BR>
+				</P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><B>(</B></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><I><B>注</B></I><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><I><B>:</B></I></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><I><B>持续时间为扣除节假日后的时间工作时间</B></I><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><I><B>)</B></I></FONT></FONT></SPAN></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: -0.11cm; margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>5&nbsp;.&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=4><B>质量保证</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+ </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+  </FONT></FONT></SPAN></FONT><FONT COLOR="#333333">质量审核：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">、&hellip;
+。</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>5
+.1&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>评审和审查计划</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+    </FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333">见评审表。</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>5
+.2&nbsp;</B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>标准、条例和约定</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+  </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+ </FONT></FONT></SPAN></FONT><FONT COLOR="#333333">代码每日发送到小组共享区，由<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">提取。</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>5
+.3&nbsp; </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>人员</B></FONT></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR>
+   </FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">
+&times;&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">、&hellip;</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>5
+.4&nbsp; </B></FONT></FONT></FONT></SPAN></FONT><FONT COLOR="#333333"><FONT SIZE=3><B>对任务间接承办单位的管理</B></FONT></FONT><FONT COLOR="#333333">（略）</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><BR></FONT></FONT></FONT><FONT COLOR="#333333"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>6.</B></FONT></FONT></FONT></SPAN></FONT><FONT SIZE=4><B>专题计划要点</B></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">(</FONT></SPAN></FONT>略<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">)</FONT></SPAN></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>
