@@ -14,7 +14,6 @@
   <script type="text/javascript" src="./js/libs/jquery-1.8.2.min.js"></script>
   <!-- GroundworkCSS -->
   <link type="text/css" rel="stylesheet" href="./css/groundwork.css">
-  <link type="text/css" rel="stylesheet" href="./css/md.css">
   <link type="text/css" rel="stylesheet" href="./css/common.css">
   <!--[if IE]>
   <link type="text/css" rel="stylesheet" href="./css/groundwork-ie.css">
@@ -25,12 +24,44 @@
   <!--[if IE 7]>
   <link type="text/css" rel="stylesheet" href="./css/font-awesome-ie7.min.css">
   <![endif]-->
-
+  <script type="text/javascript">
+    // extend Modernizr to have datauri test
+    (function(){
+      var datauri = new Image();
+      datauri.onerror = function() {
+          Modernizr.addTest('datauri', function () { return false; });
+      };
+      datauri.onload = function() {
+          Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+          Modernizr.load({
+            test: Modernizr.datauri,
+            nope: 'css/no-datauri.css'
+          });
+      };
+      datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+    })();
+    // fallback if SVG unsupported
+    Modernizr.load({
+      test: Modernizr.inlinesvg,
+      nope: [
+        'css/no-svg.css'
+      ]
+    });
+    // polyfill for HTML5 placeholders
+    Modernizr.load({
+      test: Modernizr.input.placeholder,
+      nope: [
+        'css/placeholder_polyfill.css',
+        'js/libs/placeholder_polyfill.jquery.js'
+      ]
+    });
+  </script>
+  
 </head>
 <body>
   <!-- interface -->
   <div id="interfa">
-    
+
     <header class="white band padded">
       <div class="container">
         <h2><b>LEMS</b> (Laboratory equipment management system)</h2>
@@ -38,8 +69,8 @@
         <nav class="inline gap-top">
           <ul id="head_nav">
             <li><a href="./index.html" class="button"><i class="icon-home"></i> 主页</a></li>
-            <li><a href="./doc.html" class="button active"><i class="icon-file-alt"></i> 文档</a></li> 
-            <li><a href="./download.html" class="button"><i class="icon-cloud-download"></i> 下载</a></li>
+            <li><a href="./doc.html" class="button"><i class="icon-file-alt"></i> 文档</a></li> 
+            <li><a href="./download.html" class="button active"><i class="icon-cloud-download"></i> 下载</a></li>
             <li><a href="./technology.html" class="button"><i class="icon-beaker"></i> 技术支持</a></li>
             <li><a href="https://github.com/Gaubee/LEMS" class="button"><i class="icon-github-alt"></i> Github</a></li>
           </ul>
@@ -52,41 +83,15 @@
     <div class="container">
 
       <article class="row">
-        <aside class="one fourth right-three padded border-left">
-          <h1><i class="icon-th-list"></i> 文档列表</h1>
-          <nav>
-            <ul id="md_doc_list">
-              <li><a class="button" href="#实验室设备管理系统可行性研究报告">可行性研究报告</a></li>
-              <li clsss="disabled"><a class="button disabled" href="#实验室设备管理系统项目开发计划">项目开发计划</a></li>
-              <li clsss="disabled"><a class="button disabled" href="#实验室设备管理系统规格说明书">需求规格说明书</a></li>
-            </ul>
-          </nav>
-          <hr />
-          <h1><i class="icon-th-list"></i> 示例文档列表</h1>
-          <nav>
-            <ul id="official_doc_list">
-              <li><a class="modal button" href="res/图书管理系统可行性研究报告/案例：图书管理系统可行性研究报告.html">图书管理系统可行性研究报告</a></li>
-              <li><a class="modal button" href="res/图书管理系统项目开发计划/案例：图书管理系统项目开发计划.html">图书管理系统项目开发计划</a></li>
-              <li clsss="disabled"><a class="button disabled" href="#实验室设备管理系统规格说明书">图书管理系统需求规格说明书</a></li>
-            </ul>
-          </nav>
-          <hr />
-          <h2><i class="icon-list-ol"></i> 文档导航</h2>
-          <ul id="md_doc_content_title" class="list md_title">
-            <li>选择相应文档时进行加载</li>
-          </ul>
-          <div id="back_to_top"></div>
+
+        <aside class="one fourth padded border-right">
+
         </aside>
-        <section class="three fourths left-one padded">
-          <div class="md" id="md_doc_content">
-            <h1>
-              请在 <b>文档列表</b> 选择需要的文档进行加载
-              <hr />
-              <b>文档导航</b>处的可直接点击相应的导航进行快速的跳转。
-            </h1>
-            
-          </div>
+
+        <section class="three fourths padded">
+
         </section>
+
       </article>
       
       <footer class="footer align-right">
@@ -98,10 +103,8 @@
   <!-- scripts -->
   <script type="text/javascript" src="js/plugins/jquery.orbit-1.4.0.js"></script>
   <script type="text/javascript" src="js/groundwork.all.js"></script>
-
-  <script type="text/javascript" src="js/showdown.js"></script>
-
+  
   <script type="text/javascript" src="javascripts/common.js"></script>
-  <script type="text/javascript" src="javascripts/md.js"></script>
+
 </body>
 </html>

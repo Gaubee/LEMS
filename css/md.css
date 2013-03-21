@@ -1,4 +1,4 @@
-#md_doc_list a.button{
+nav a.button{
 	width: 100%;
 }
 .md{
@@ -10,10 +10,20 @@
 }
 .md h1:hover,.md h2:hover,.md h3:hover,.md h4:hover,.md h5:hover,.md h6:hover{
 	color: #666;
+	-ms-transition: color 0.25s;
+	-o-transition: color 0.25s;
+	-moz-transition: color 0.25s;
+	-webkit-transition: color 0.25s;
+	transition: color 0.25s;
 }
 .md p:hover{
 	border-radius: 6px;
-	background-color: #FFF;
+	background-color: #DEF;
+	-ms-transition: background-color 0.4s;
+	-o-transition: background-color 0.4s;
+	-moz-transition: background-color 0.4s;
+	-webkit-transition: background-color 0.4s;
+	transition: background-color 0.4s;
 }
 .md blockquote p:before{
 	color: transparent;

@@ -24,57 +24,101 @@
   <!--[if IE 7]>
   <link type="text/css" rel="stylesheet" href="./css/font-awesome-ie7.min.css">
   <![endif]-->
+  <script type="text/javascript">
+    // extend Modernizr to have datauri test
+    (function(){
+      var datauri = new Image();
+      datauri.onerror = function() {
+          Modernizr.addTest('datauri', function () { return false; });
+      };
+      datauri.onload = function() {
+          Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+          Modernizr.load({
+            test: Modernizr.datauri,
+            nope: 'css/no-datauri.css'
+          });
+      };
+      datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+    })();
+    // fallback if SVG unsupported
+    Modernizr.load({
+      test: Modernizr.inlinesvg,
+      nope: [
+        'css/no-svg.css'
+      ]
+    });
+    // polyfill for HTML5 placeholders
+    Modernizr.load({
+      test: Modernizr.input.placeholder,
+      nope: [
+        'css/placeholder_polyfill.css',
+        'js/libs/placeholder_polyfill.jquery.js'
+      ]
+    });
+  </script>
 
 </head>
 <body>
+  <!-- interface -->
+  <div id="interfa">
 
-  <header class="white band padded">
-    <div class="container">
-      <h2><b>LEMS</b> (Laboratory equipment management system)</h2>
-      <cite class="pull-right">实验室设备管理系统主页</cite>
-      <nav class="inline gap-top">
-        <ul id="head_nav">
-          <li><a href="./index.html" class="button active"><i class="icon-home"></i> 主页</a></li>
-          <li><a href="./doc.html" class="button"><i class="icon-file-alt"></i> 文档</a></li> 
-          <li><a href="./download.html" class="button disabled"><i class="icon-cloud-download"></i> 下载</a></li>
-          <li><a href="./technology.html" class="button disabled"><i class="icon-beaker"></i> 技术支持</a></li>
-          <li><a href="https://github.com/Gaubee/LEMS" class="button"><i class="icon-github-alt"></i> Github</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-        
-
-  <div class="container">
-
-    <div class="padded">
-      <div class="slider">
-        <img src="img/main-1.jpg" alt="" />
-        <img src="img/main-2.png" alt="" />
+    <header class="white band padded">
+      <div class="container">
+        <h2><b>LEMS</b> (Laboratory equipment management system)</h2>
+        <cite class="pull-right">实验室设备管理系统主页</cite>
+        <nav class="inline gap-top">
+          <ul id="head_nav">
+            <li><a href="./index.html" class="button active"><i class="icon-home"></i> 主页</a></li>
+            <li><a href="./doc.html" class="button"><i class="icon-file-alt"></i> 文档</a></li> 
+            <li><a href="./download.html" class="button"><i class="icon-cloud-download"></i> 下载</a></li>
+            <li><a href="./technology.html" class="button"><i class="icon-beaker"></i> 技术支持</a></li>
+            <li><a href="https://github.com/Gaubee/LEMS" class="button"><i class="icon-github-alt"></i> Github</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
+
+          
+
+    <div class="container">
+
+      <div class="padded">
+        <div class="slider">
+          <img src="img/main-1.jpg" alt="" />
+          <img src="img/main-2.png" alt="" />
+        </div>
+      </div>
+      <hr />
+      <article class="row mes">
+        <section class="one third padded">
+          <h3>Github</h3>
+          <img src="img/github-logo.png" alt="" class="gap-top gap-bottom" />
+          <p>GitHub可以托管各种git库，并提供一个web界面(Github page)，但与其它像 SourceForge或Google Code这样的服务不同，GitHub的独特卖点在于从另外一个项目进行分支的简易性。为一个项目贡献代码非常简单：首先点击项目站点的“fork”的按钮，然后将代码检出并将修改加入到刚才分出的代码库中，最后通过内建的“pull request”机制向项目负责人申请代码合并。已经有人将GitHub称为代码玩家的MySpace。<div class="pull-right"><a href="https://github.com/" target="_blank">Read more <i class="icon-double-angle-right"></i></a></div></p>
+        </section>
+        <section class="one third padded">
+          <h3>Markdown</h3>
+          <img src="img/markdown-logo.png" alt="" class="gap-top gap-bottom" />
+          <p>Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。基于此Markdown语法以及开源的转换工具，项目文档得以轻松地转换成HTML格式进行查看，并快速高效地改进。<div class="pull-right"><a href="http://markdown.tw/" target="_blank">Read more <i class="icon-double-angle-right"></i></a></div></p>
+        </section>
+        <section class="one third padded">
+          <h3>GroundworkCSS</h3>
+          <img src="img/groundwork-logo.png" alt="" class="gap-top gap-bottom" />
+          <p>GroundworkCSS 是一个基于 Sass 预处理器的开源项目 ，主要用于快速构建响应式 Web 应用程序。拥有一个灵活的、可嵌套的网格系统，可以创建适应多种浏览设备的布局。 Groundwork 还提供多种 UI 组件，如导航、按钮、图标、表单、Tabs、对话框、工具提示等等。轻松地适应移动设备，以及页面布局的桌面，您可以建立一个网站，几乎任何设备上看上去很不错。<div class="pull-right"><a href="http://groundwork.sidereel.com/" target="_blank">Read more <i class="icon-double-angle-right"></i></a></div></p>
+        </section>
+      </article>
+      <hr />
+      
+      <footer class="footer align-right">
+          <p>&copy 2013 大406版权所有 如果您有好的建议或者意见 <a href="mailto:gaubeebangeel@gmail.com">给我留言</a></p>
+      </footer>
+
     </div>
-
-    <article class="row">
-      <aside class="one fourth padded border-right">
-
-        
-      </aside>
-
-      <section class="three fourths padded">
-
-
-      </section>
-    </article>
-    
-    <footer class="footer align-right">
-        <p>&copy 2013 大406版权所有 如果您有好的建议或者意见 <a href="mailto:gaubeebangeel@gmail.com">给我留言</a></p>
-    </footer>
-
   </div>
   <!-- scripts -->
   <script type="text/javascript" src="js/plugins/jquery.orbit-1.4.0.js"></script>
   <script type="text/javascript" src="js/groundwork.all.js"></script>
+
+  <script type="text/javascript" src="javascripts/common.js"></script>
 
 </body>
 </html>
