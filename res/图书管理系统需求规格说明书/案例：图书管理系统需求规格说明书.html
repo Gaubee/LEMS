@@ -1,0 +1,1465 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=gb2312">
+	<TITLE>图书管理系统需求分析报告</TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.0.0.3 (Windows)">
+	<META NAME="AUTHOR" CONTENT="JOE">
+	<META NAME="CREATED" CONTENT="20060407;8370000">
+	<META NAME="CHANGEDBY" CONTENT="番茄花园">
+	<META NAME="CHANGED" CONTENT="20080722;10040000">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: justify; widows: 0; orphans: 0 }
+		P.western { font-family: "Times New Roman", serif; font-size: 10pt; so-language: en-US }
+		P.cjk { font-family: "宋体", "SimSun"; font-size: 10pt; so-language: zh-CN }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+		H1 { margin-top: 0.39cm; margin-bottom: 0.39cm; background: #cccccc; direction: ltr; color: #000000; line-height: 0.49cm; text-align: left; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H1.western { font-family: "Arial", sans-serif; font-size: 12pt; so-language: en-US; font-weight: bold }
+		H1.cjk { font-family: "黑体", "SimHei"; font-size: 12pt; so-language: zh-CN; font-weight: bold }
+		H1.ctl { font-family: "Arial", sans-serif; font-size: 10pt; so-language: ar-SA }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="zh-CN" TEXT="#000000" LINK="#000080" VLINK="#800000" bgcolor="#ffffff" DIR="LTR" style="padding:20px;">
+<H1 CLASS="cjk" STYLE="margin-top: 0cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=4><SPAN LANG="en-US">1</SPAN></FONT></FONT><FONT SIZE=4 STYLE="font-size: 15pt">附录</FONT><FONT FACE="Arial, sans-serif"><FONT SIZE=4 STYLE="font-size: 15pt"><SPAN LANG="en-US">C</SPAN></FONT></FONT><FONT SIZE=4 STYLE="font-size: 15pt">：图书管理系统需求规格说明书</FONT></H1>
+<P CLASS="cjk" ALIGN=CENTER STYLE="text-indent: 1.59cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="华文行楷"><FONT SIZE=4 STYLE="font-size: 15pt"><B>图书管理系统</B></FONT></FONT></P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="text-indent: 1.7cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="黑体, SimHei"><FONT SIZE=4 STYLE="font-size: 16pt"><B>需 
+求  规  格  说  明  书</B></FONT></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><FONT SIZE=4><SPAN LANG="en-US"><B>1.</B></SPAN></FONT></FONT><FONT SIZE=4><B>引言</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3>1</FONT></SPAN></FONT><FONT SIZE=3>．</FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3>1</FONT></SPAN></FONT><FONT SIZE=3><B>编写目的</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+编写本报告的目的是明确本系统的详细需求，供使用单位确认系统的功能和性能，并作为软件设计人员的设计依据和使用单位的验收标准。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun"><FONT SIZE=3><B>1.2</B></FONT></FONT></SPAN></FONT><FONT SIZE=3><B>项目背景</B></FONT></P>
+<OL START=2>
+	<UL>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">开发软件名称：图书管理系统。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">项目开发者：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT COLOR="#333333"><FONT FACE="宋体, SimSun">&times;&times;</FONT></FONT></SPAN></FONT><FONT COLOR="#333333">学院计算机科学系&ldquo;图书管理系统&rdquo;开发小组：</FONT></P>
+	</UL>
+</OL>
+<P CLASS="cjk" STYLE="text-indent: 3.7cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;&times;(&times;</SPAN></FONT>号，组长<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">)</SPAN></FONT>，<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;&times;(&times;</SPAN></FONT>号<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">)</SPAN></FONT>，&hellip;&hellip;</P>
+<OL START=2>
+	<UL>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">用户单位：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&times;&times;</SPAN></FONT>学院</P>
+	</UL>
+</OL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3><B>1.3</B></FONT></SPAN></FONT><FONT SIZE=3><B>参考资料</B></FONT><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3><B>:</B></FONT></SPAN></FONT></P>
+<OL START=2>
+	<UL>
+		<OL TYPE=i>
+			<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#333333">钱乐秋等，《软件工程》，青还大学出版社；</FONT></P>
+			<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#333333">张害藩，</FONT>《软件工程导论》（第四版），清华大学出版社；</P>
+			<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">王珊等，《数据库原理及设计》，清华大学出版社；</P>
+			<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">赵池龙等，《软件工程实践教程》，电子工业出版社。</P>
+		</OL>
+	</UL>
+</OL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=4><SPAN LANG="en-US"><B>2.</B></SPAN></FONT></FONT><FONT SIZE=4><B>任务概述</B></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+<FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><FONT COLOR="#000000"><B>2.1</B></FONT></SPAN></FONT></FONT><FONT SIZE=3><FONT COLOR="#000000"><B>目标
+</B></FONT></FONT>
+</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+本系统通过强大的计算机技术给图书管理人员和读者借、还书带来便利。本系统除了图书馆内管理的一般功能还外，还包括网上在线查询图书信息、查询本人的借阅情况和续借等功能。目标还包括：</P>
+<UL>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%">
+	减少人力与管理费用；</P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%">
+	提高信息准确度；</P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%">
+	改进管理和服务；</P>
+	<LI><P CLASS="cjk" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%">
+	建立高效的信息传输和服务平台，提高信息处理速度和利用率；<FONT FACE="Times New Roman, serif">
+	</FONT>
+	</P>
+</UL>
+<UL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	  <FONT SIZE=3><FONT SIZE=2 STYLE="font-size: 10pt">系统设计优良，界面设计精美、友好、快捷，人性化设计，后台管理功能强大、效率高；
+	</FONT></FONT>
+	</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 150%; widows: 2; orphans: 2">
+	  <FONT SIZE=3><FONT SIZE=2 STYLE="font-size: 10pt">更简便、信息化程度更高的图书管理流程；</FONT></FONT></P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>2.2</B></SPAN></FONT></FONT><FONT SIZE=3><B>用户的特点</B></FONT></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">本软件的最终用户是面向管理员（图书管理员和其它管理人员）、读者（老师和同学等），他们都具有一定的计算机应用基础，可以比较熟练操作计算机。管理员和读者都是经常性用户。</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">系统维护人员为计算机专业人员，熟悉数据库、操作系统、网络维护工作。维护人员为间隔性用户。</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=4><B>3.
+</B></FONT></SPAN></FONT><FONT SIZE=4><B>需求规定</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+在图书管理系统中，管理员要为每个读者建立借阅账户，并&#32102;读者发放不同类别的借阅卡（借阅卡可提供卡号、读者姓名），账户内存储读者的个人信息和借阅记录信息。持有借阅卡的读者可以通过管理员（作为读者的代理人与系统交互）借阅、归还图书，不同类别的读者可借阅图书的范围、数量和期限不同，可通过互联网或图书馆内查询终端查询图书信息和个人借阅情况，以及续借图书（系统审核符合续借条件）。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+借阅图书时，先输入读者的借阅卡号，系统验证借阅卡的有效性和读者是否可继续借阅图书，无效则提示其原因，有效则显示读者的基本信息（包括照片），供管理员人工核对。然后输入要借阅的书号，系统查阅图书信息数据库，显示图书的基本信息，供管理员人工核对。最后提交借阅请求，若被系统接受则存储借阅纪录，并修改可借阅图书的数量。归还图书时，输入读者借阅卡号和图书号（或丢失标记号），系统验证是否有此借阅纪录以及是否超期借阅，无则提示，有则显示读者和图书的基本信息供管理员人工审核。如果有超期借阅或丢失情况，先转入过期罚款或图书丢失处理。然后提交还书请求，系统接受后删除借阅纪录，并登记并修改可借阅图书的数量。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+图书管理员定期或不定期对图书信息进行入库、修改、删除等图书信息管理以及注销（不外借），包括图书类别和出版社管理。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+为系统维护人员提供权限管理、数据备份等通用功能。</P>
+<P CLASS="cjk" STYLE="text-indent: 0.85cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3><B>3.1
+</B></FONT></SPAN></FONT><FONT SIZE=3><B>数据流图</B></FONT><FONT SIZE=3>（系统维护为通用功能，这里不做具体分析）</FONT></P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm; line-height: 150%"><B>顶层图</B></P>
+</UL>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6_html_m560cae9c.gif" NAME="图形1" ALIGN=BOTTOM WIDTH=453 HEIGHT=141 BORDER=0></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>0</B></SPAN></FONT><B>层图</B></P>
+</UL>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6_html_m3dceb920.gif" NAME="图形2" ALIGN=BOTTOM WIDTH=506 HEIGHT=288 BORDER=0></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>1</B></SPAN></FONT><B>层图（</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>2</B></SPAN></FONT><B>书籍管理）</B></P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6_html_45efa65e.gif" NAME="图形3" ALIGN=BOTTOM WIDTH=550 HEIGHT=328 BORDER=0></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>1</B></SPAN></FONT><B>层图（</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>3</B></SPAN></FONT><B>读者管理）</B></P>
+</UL>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6_html_m7bbbbd5f.gif" NAME="图形4" ALIGN=BOTTOM WIDTH=374 HEIGHT=275 BORDER=0></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>1</B></SPAN></FONT><B>层图（</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>4</B></SPAN></FONT><B>借阅管理）</B></P>
+</UL>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6_html_m6d24662f.gif" NAME="图形5" ALIGN=BOTTOM WIDTH=515 HEIGHT=309 BORDER=0></P>
+<P CLASS="cjk" STYLE="margin-left: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><B>数据流图加工处理功能简单描述</B></P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+（<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">1</FONT></SPAN></FONT>）书籍管理</P>
+<UL>
+	<UL>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">书籍类别管理：增、删除、改等管理。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">书籍信息管理：新书入库，图书购入后由图书管理人员将书籍编码并将其具体信息录入书籍信息表。书籍信息修改，书籍信息由于工作人员的疏忽而出现错误时，可修改其信息。管理员按不同方式查询、统计，读者按不同方式查询。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">出版社信息管理：增、删除、改等管理。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">图书注销：某一部分图书会随着时间的增长及知识的更新而变得不再有使用的价值，或者图书被损坏，这些图书就要在图书籍信息表中的除去。即从书籍信息表中删去此书籍记录。</P>
+	</UL>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">3</SPAN></FONT>）读者管理</P>
+<UL>
+	<UL>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">读者类别信息管理：增、删除、改等管理。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">读者信息管理：办理、挂失、暂停借、注销阅卡，录入、修改、删除读者信息。</P>
+	</UL>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">4</SPAN></FONT>）借阅管理</P>
+<UL>
+	<UL>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">续借管理：提供读者在符合规定的情况下网上续借。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">还书管理：根据借阅卡编号、图书<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">ID</FONT></SPAN></FONT>等，在借阅信息表中找到相应的记录，将借书记录删除，更新该记录的相应数据（图书信息表）。根据违反规定情况计算和登记罚款记录。</P>
+		<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">借书管理：根据借阅卡编号和图书编号，进行借书登记。在借阅信息表中插入一条借书记录，该记录包括读者<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">ID</FONT></SPAN></FONT>、图书<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">ID</FONT></SPAN></FONT>、借出日期、借阅编号、操作员等信息，更新该记录的相应数据（图书信息表）。把超期图书以列表的形式显示出来，并以电子邮件或打印成书面通知读者。提供读者网上查询自己的借阅情况（包括超期提示）</P>
+	</UL>
+</UL>
+<P CLASS="cjk" STYLE="margin-left: 1.27cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=4><SPAN LANG="en-US"><B>3.2</B></SPAN></FONT></FONT><FONT SIZE=4><B>数据描述</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+通过对图书管理系统需求及其数据流图的分析，可以得出该系统涉及读者、书籍、借阅和还书信息表等数据实体。</P>
+<P CLASS="cjk" STYLE="margin-left: 0.64cm; margin-bottom: 0cm; line-height: 150%">
+<B>（</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>1</B></SPAN></FONT><B>）</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>E-R</B></SPAN></FONT><B>图</B></P>
+<P CLASS="cjk" STYLE="margin-left: 0.64cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" ALIGN=CENTER STYLE="text-indent: 0.37cm; margin-bottom: 0cm; line-height: 150%">
+<IMG SRC="%E6%A1%88%E4%BE%8B%EF%BC%9A%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6_html_1679a5d4.gif" NAME="图形6" ALIGN=BOTTOM WIDTH=533 HEIGHT=212 BORDER=0></P>
+<P CLASS="cjk" STYLE="text-indent: 0.37cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" STYLE="text-indent: 0.37cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<B>（</B><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><B>2</B></SPAN></FONT><B>）数据实体结构描述</B></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+<BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=487 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=123>
+		<COL WIDTH=126>
+		<COL WIDTH=194>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=10 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">功能名称：图书信息表</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储位置：<B>图书信息</B></P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储组织：一本图书一条记录</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键：图书编号</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=3 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据元素</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据采集方式</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER>说明</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键，必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书名称</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书类别编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">书架位置</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">ISBN</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">作者</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">译者</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">单价</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">出版社编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">出版时间</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">总数量</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">入库日期</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">入库操作员</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">现存量</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">借阅次数</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">是否注销</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">内容简介</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">备注</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=5 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>相关提供数据主要功能模块：书籍管理、借阅管理、注销管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=2 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>数据输出接受主要功能模块：书籍管理、借阅管理、注销管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=8 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">修改记录：</P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=487 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=123>
+		<COL WIDTH=126>
+		<COL WIDTH=194>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=10 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">功能名称：读者信息表</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储位置：<B>读者信息</B></P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储组织：一个读者一条记录</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键：读者编号</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=3 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据元素</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据采集方式</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER>说明</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者编号（借书证号码和用户名与此同）</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键，必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者姓名</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者类别编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者性别</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">出生日期</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者状态</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">办证日期</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">已借图书数量</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">证件名称</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">证件号码</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者单位</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">联系地址</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">联系电话</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">EMAIL</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">用户密码</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">办证操作员</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">备注</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=5 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>相关提供数据主要功能模块：读者管理、借阅管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=2 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>数据输出接受主要功能模块：读者管理、借阅管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=8 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">修改记录：</P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=487 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=123>
+		<COL WIDTH=126>
+		<COL WIDTH=194>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=10 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">功能名称：借阅信息表</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储位置：<B>借阅信息</B></P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储组织：一本借阅一条记录</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键：图书编号</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=3 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据元素</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据采集方式</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER>说明</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键，必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书名称</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键，必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者姓名</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书价格</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">借阅日期</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">应还日期</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">续借次数</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">借阅操作员</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=5 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>相关提供数据主要功能模块：借阅管理、续借管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=2 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>数据输出接受主要功能模块：借阅管理、续借管理
+								</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=8 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">修改记录：</P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=487 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=123>
+		<COL WIDTH=126>
+		<COL WIDTH=194>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=10 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">功能名称：图书类别表 
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储位置：<B>图书类别</B></P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储组织：一类图书一条记录</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键：图书类别编号</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=3 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据元素</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据采集方式</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER>说明</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书类别编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键，必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书类别名称</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">备注</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=5 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>相关提供数据主要功能模块：书籍类别管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=2 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>数据输出接受主要功能模块：书籍类别管理、书籍管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=8 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">修改记录：</P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=487 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=123>
+		<COL WIDTH=126>
+		<COL WIDTH=194>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=10 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">功能名称：出版社信息表 
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储位置：出版社信息</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储组织：一个出版社一条记录</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键：出版社编号</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=3 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据元素</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据采集方式</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER>说明</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">出版社编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键，必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">出版社名称</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">出版社地址</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">邮政编码</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">联系人</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">联系电话</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">EMAIL</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">备注</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=5 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>相关提供数据主要功能模块：出版社管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=2 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>数据输出接受主要功能模块：出版社管理、书籍管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=8 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">修改记录：</P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=487 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=123>
+		<COL WIDTH=126>
+		<COL WIDTH=194>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=10 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">功能名称：读者类别表 
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储位置：读者类别</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储组织：一类读者一条记录</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键：读者类别编号</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=3 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据元素</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据采集方式</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER>说明</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者类别编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键，必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">读者类别名称</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>工人采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>必宿输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">可借书数量</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">可借书天数</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">可续借次数</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">逾期缓冲天数</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">逾期每天罚款金额</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">丢失罚款倍数</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=5 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>相关提供数据主要功能模块：读者类别管理 
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=2 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>数据输出接受主要功能模块：读者管理、读者类别管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=8 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">修改记录：</P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<CENTER>
+	<TABLE WIDTH=487 CELLPADDING=7 CELLSPACING=0>
+		<COL WIDTH=123>
+		<COL WIDTH=126>
+		<COL WIDTH=194>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=10 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">功能名称：图书注销信息表</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=46 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储位置：图书注销信息 
+				</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">存储组织：一本用户一条记录</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键：图书编号</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=3 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据元素</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=CENTER>数据采集方式</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=CENTER>说明</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 HEIGHT=1 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">图书编号</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">主键，必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">注销数量</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>必须输入</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">注销日期</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>人工采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=123 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk">注销操作员</P>
+			</TD>
+			<TD WIDTH=126 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.19cm; padding-right: 0cm">
+				<P CLASS="cjk" ALIGN=LEFT>自动采集</P>
+			</TD>
+			<TD WIDTH=194 STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=5 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>相关提供数据主要功能模块：注销管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=2 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk" ALIGN=LEFT>数据输出接受主要功能模块：注销管理、书籍管理</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=3 WIDTH=471 HEIGHT=8 VALIGN=TOP STYLE="border: 1px solid #000000; padding: 0cm 0.19cm">
+				<P CLASS="cjk">修改记录：</P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>3.3</B></SPAN></FONT></FONT><FONT SIZE=3><B>性能需求</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+由于此开发项目针对图书馆，使用频度较高，使用性要求比较高。为防止对信息资料和管理程序的恶意破坏，要求有较为可靠的安全性能。总之，要求稳定、安全、便捷，易于管理和操作。</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">查询速度：不超过<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">10</SPAN></FONT>秒；</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">其它所有交互功能反应速度：不超过<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">3</SPAN></FONT>秒；</P>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">可靠性：平均故障间隔时间不低于<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">200</SPAN></FONT>小时。</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>3.4
+</B></SPAN></FONT></FONT><FONT SIZE=3><B>其他需求</B></FONT></P>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+能快速恢复系统和故障处理，方便系统升级和扩充，故障恢复时间不超过<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">5</SPAN></FONT>小时。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=4><SPAN LANG="en-US"><B>4.</B></SPAN></FONT></FONT><FONT SIZE=4><B>运行环境规定</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>4.1</B></SPAN></FONT></FONT><FONT SIZE=3><B>硬件环境</B></FONT></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">服务器</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: -0.11cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">	      (1)
+</SPAN></FONT>处理器（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">CPU</SPAN></FONT>）：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Pentium
+900M (</SPAN></FONT>推荐<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Pentium
+4 1.2G</SPAN></FONT>）</P>
+<P CLASS="cjk" STYLE="text-indent: -0.11cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">	      (2)
+</SPAN></FONT>内存容量（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">RAM</SPAN></FONT>）：至少<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">256M</SPAN></FONT>（推荐
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">512M</SPAN></FONT>）</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">客户端</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: -0.11cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">	      (1)
+</SPAN></FONT>处理器（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">CPU</SPAN></FONT>）：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Pentium
+133M </SPAN></FONT>或更高</P>
+<P CLASS="cjk" STYLE="text-indent: -0.11cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">	      (2)
+</SPAN></FONT>内存容量（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">RAM</SPAN></FONT>）：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">64M</SPAN></FONT>或更高</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>4.2</B></SPAN></FONT></FONT><FONT SIZE=3><B>软件环境</B></FONT></P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">数据库服务器端</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-left: 1.59cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(1) </SPAN></FONT>操作系统：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Microsoft
+Windows 2000</SPAN></FONT></P>
+<P CLASS="cjk" STYLE="margin-left: 1.59cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(2)
+</SPAN></FONT>数据库管理系统：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Oracle</SPAN></FONT>，配置<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">TCP/IP</SPAN></FONT>协议</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Web</SPAN></FONT>服务器端</P>
+</UL>
+<P CLASS="cjk" STYLE="margin-left: 1.59cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(1) </SPAN></FONT>操作系统：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Microsoft
+Windows 2000</SPAN></FONT></P>
+<P CLASS="cjk" STYLE="margin-left: 1.59cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(2) Internet
+</SPAN></FONT>信息服务（<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">IIS</SPAN></FONT>）<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">6.0</SPAN></FONT>管理器</P>
+<P CLASS="cjk" STYLE="margin-left: 1.59cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(3) Visual Studio.NET
+2003</SPAN></FONT>，配置<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">TCP/IP</SPAN></FONT>协议
+</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">客户端</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 1.48cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">(1) </SPAN></FONT>操作系统：<FONT FACE="宋体, SimSun"><SPAN LANG="en-US">Windows
+98/2000/2003/XP</SPAN></FONT></P>
+<P CLASS="cjk" STYLE="margin-left: 2.43cm; text-indent: -0.74cm; margin-bottom: 0cm; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">(2)
+Web</FONT></SPAN></FONT>浏览器：<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">Internet
+Explorer 5.0</FONT></SPAN></FONT>以上或<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">Netscape
+4.0</FONT></SPAN></FONT>以上，配置<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="宋体, SimSun">TCP/IP</FONT></SPAN></FONT>协议</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT SIZE=3><B>4.3</B></FONT></SPAN></FONT><FONT SIZE=3><B>接口</B></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>
+</B></FONT></FONT>
+</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">硬件接口<FONT FACE="Times New Roman, serif">
+	</FONT>
+	</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+考虑到大量数据的备份等要求，需要保持与磁带机和光盘刻录机的接口，这较易实现。</P>
+<UL>
+	<LI><P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%">软件接口<FONT FACE="Times New Roman, serif">
+	</FONT>
+	</P>
+</UL>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm; margin-bottom: 0cm; line-height: 150%">
+这里，主要考虑软件与操作系统、数据库管理系统的接口，以及局域网和互联网软件之间的数据交换。考虑到文档处理时有可能需要较常用的办公软件。例如<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">Microsoft</SPAN></FONT>的<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">Office</SPAN></FONT>系列，所以应尽量实现它们之间的数据格式的自动转换。<FONT FACE="Times New Roman, serif">
+</FONT>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="宋体, SimSun"><FONT SIZE=3><SPAN LANG="en-US"><B>4.4</B></SPAN></FONT></FONT><FONT SIZE=3><B>控制</B></FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm">  
+由于本系统采用目前的主流技术，对程序的运行和控制都没有特殊要求。</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>
