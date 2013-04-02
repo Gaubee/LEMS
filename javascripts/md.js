@@ -4,7 +4,7 @@
   var converter = new Showdown.converter();
   $("#md_doc_list").on("click","li a",function(){
     var self = $(this);
-    if (!self.hasClass("active")) {
+    if (!self.hasClass("active")&&!self.hasClass("disabled")) {
       self.parent().parent().find("li a.active").removeClass("active");
       self.addClass("active");
       var href = self.attr("href");
