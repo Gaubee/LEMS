@@ -8,7 +8,7 @@
       self.parent().parent().find("li a.active").removeClass("active");
       self.addClass("active");
       var href = self.attr("href");
-      var doc = href.replace("#","")+".md";
+      var doc = href.replace("#","")+".md";//?_="+Math.random();
       //console.log(doc);
       $.ajax({
         url:doc,
