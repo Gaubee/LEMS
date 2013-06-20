@@ -1,0 +1,14 @@
+jqBootstrap Validation  表单验证插件
+http://reactiveraven.github.io/jqBootstrapValidation/
+
+DateTime Picker  日期选择器
+http://www.malot.fr/bootstrap-datetimepicker/
+
+DataTables（jQuery）  表格操作与展示
+http://datatables.net/blog/Twitter_Bootstrap
+
+Messenger  消息展示层
+http://github.hubspot.com/messenger/
+
+Selectize.js  下拉信息表单（用于选择性查询、选择性信息）
+http://brianreavis.github.io/selectize.js/
