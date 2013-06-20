@@ -1,0 +1,17 @@
+footer{
+	position: fixed;
+	bottom: 0px;
+}
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+@media (max-width: 979px) {
+	body{
+		padding-top: 0px;
+	}
+}
+.selectize{
+	width: 206px;
+}
